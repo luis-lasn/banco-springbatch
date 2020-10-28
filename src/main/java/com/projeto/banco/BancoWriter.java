@@ -14,7 +14,7 @@ public class BancoWriter implements ItemWriter<BancoDTO>{
     public void write(List<? extends BancoDTO> list) throws Exception {
         LOGGER.info("Writing Bancos: {}", list);
         System.out.println("Printou " + list.get(0).getId());
-        System.out.println("Printou " + list.get(0).getBanco());
+        System.out.println("Printou " + list.get(0).getNome());
         System.out.println("Printou " + list.get(0).getAgencia());
         System.out.println("Printou " + list.get(0).getConta());
     }

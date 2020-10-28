@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class BancoDTO {
 	
 	private String id;
-	private String banco;
+	private String nome;
 	private String agencia;
 	private String conta;
 	
@@ -14,9 +14,9 @@ public class BancoDTO {
 		
 	}
 
-	public BancoDTO(String id, String banco, String agencia, String conta) {
+	public BancoDTO(String id, String nome, String agencia, String conta) {
 		this.id = id;
-		this.banco = banco;
+		this.nome = nome;
 		this.agencia = agencia;
 		this.conta = conta;
 	}
@@ -29,12 +29,12 @@ public class BancoDTO {
 		this.id = id;
 	}
 
-	public String getBanco() {
-		return banco;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setBanco(String banco) {
-		this.banco = banco;
+	public void setBanco(String nome) {
+		this.nome = nome;
 	}
 
 	public String getAgencia() {

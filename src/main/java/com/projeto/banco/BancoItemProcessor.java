@@ -11,7 +11,7 @@ public class BancoItemProcessor implements ItemProcessor<BancoDTO, BancoDTO>{
 	  @Override
 	  public BancoDTO process(final BancoDTO bancoDTO) throws Exception {
 		final String id = bancoDTO.getId().toUpperCase();
-		final String nome = bancoDTO.getBanco().toUpperCase();
+		final String nome = bancoDTO.getNome().toUpperCase();
 	    final String agencia = bancoDTO.getAgencia().toUpperCase();
 	    final String conta = bancoDTO.getConta().toUpperCase();
 
